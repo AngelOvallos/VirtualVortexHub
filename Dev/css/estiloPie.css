@@ -1,0 +1,39 @@
+.subtitle{
+    display: flex;
+    align-items: center;
+}
+.subtitle_con{
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.contactos{
+    padding: 10px;
+}
+
+.contactos p{
+    font-size: 18px;
+}
+
+.social_media{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+
+}
+
+.social_img{
+    width: 40px;
+}
+.eslogan{
+    padding-left: 50%;
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+}

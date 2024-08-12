@@ -1,0 +1,76 @@
+.categoriasInicio {
+    background-color: #db0205;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.barra {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.espacio-izquierdo,
+.espacio-derecho {
+    width: 10%;
+}
+
+.contenedor {
+    flex: 8;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(8, 20, 126);
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.item {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 2%; /* Ajuste del padding en porcentajes */
+    margin: 1%; /* Ajuste del margen en porcentajes */
+    width: 14%; /* Tamaño del elemento en porcentaje */
+}
+
+.item:hover {
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item img {
+    width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: auto;
+}
+
+.item a h3 {
+    font-size: 1.25vw; /* Tamaño de fuente responsivo en porcentaje */
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item p {
+    font-size: 1.1vw; /* Tamaño de fuente responsivo en porcentaje */
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: translateZ(2vw); /* Ajuste en porcentaje para sombra */
+        box-shadow: 0 0 1vw 0.2vw rgba(0, 0, 0, 0.35); /* Ajuste en porcentaje para sombra */
+    }
+}

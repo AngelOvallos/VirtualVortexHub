@@ -1,0 +1,39 @@
+main section{
+    display: block;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    height:max-content;
+    width: auto;
+    color: rgb(230, 230, 230);
+}
+
+main section div p{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 150%;
+}
+
+.info{
+    font-size: large;
+    width: 100%; /* Ancho del textarea */
+    max-width: 100%; /* Ancho máximo */
+    height: 200px;
+    max-height: 1000px;
+    resize: none; /* Evitar que el usuario cambie el tamaño */
+    box-sizing: border-box;
+}
+
+.ingCorreo{
+    font-size: large;
+    width: 40%;
+}
+
+div button{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}

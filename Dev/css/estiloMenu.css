@@ -1,0 +1,57 @@
+#ladosMenuHorizontal{
+    background-color: rgb(6, 16, 104);
+}
+
+.menuHorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuHorizontal li a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuHorizontal li:hover{
+    border-radius: 10px;
+    background-color: #db0205;
+}
+
+.menuVertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(6, 16, 104);
+    z-index: 9999;
+    animation: shadow-drop-2-center 0.4ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.menuHorizontal li:hover .menuVertical{
+    display: block;
+}
+
+.menuVertical li:hover{
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.menuVertical li a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}

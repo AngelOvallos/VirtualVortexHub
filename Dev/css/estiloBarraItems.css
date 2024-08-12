@@ -1,0 +1,99 @@
+.categoriasInicio {
+    background-color: #db0205;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: shadow-drop-2-center 0.4ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.barra {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: 100%;
+    
+}
+
+.espacio-izquierdo {
+    width: 10%;
+}
+
+.espacio-derecho {
+    width: 10%;
+}
+
+.contenedor {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    background-color: rgb(8, 20, 126);
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.item {
+    flex: 0 0 auto;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    width: 20%; /* Se ajusta el ancho de los elementos */
+    max-width: 200px; /* Ancho máximo para mantener la proporción */
+}
+
+.item:hover {
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item img {
+    width: 100%; /* Imagen ajustada al 100% del contenedor */
+    height: auto;
+}
+
+.item h3 {
+    font-size: 1.25vw; /* Tamaño de fuente responsive */
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item p {
+    font-size: 1.1vw; /* Tamaño de fuente en unidades reales */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    padding: 1.2rem; /* Ajuste del tamaño del padding */
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button.anterior {
+    left: 10%;
+}
+
+button.siguiente {
+    right: 10%;
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: translateZ(2vw); /* Ajuste relativo para la sombra */
+        box-shadow: 0 0 1vw 0.2vw rgba(0, 0, 0, 0.35); /* Ajuste relativo para la sombra */
+    }
+}
+

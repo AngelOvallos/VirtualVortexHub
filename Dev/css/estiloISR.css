@@ -1,0 +1,78 @@
+main section{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    height:max-content;
+    width: auto;
+    color: rgb(230, 230, 230);
+}
+
+main section div p{
+    margin-top: 40px;
+    font-size: 150%;
+}
+
+.ingCorreo{
+    font-size: large;
+    width: 30%;
+}
+
+.contra{
+    font-size: large;
+    width: 25%;
+}
+
+.confirmContra{
+    font-size: large;
+    width: 25%;
+}
+
+div button{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.divRegistro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(6, 16, 104);
+    padding: 10px 20px;
+    border-right: 30%;
+}
+
+.refRegistro{
+    padding: 10px 20px;
+    padding-top: 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.refRegistroP:hover{
+    padding-left:10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    z-index: 9999;
+    background-color: #db0205;
+    animation: shadow-drop-2-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    cursor: pointer;
+}
+
+@keyframes shadow-drop-2-center {
+    0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
